@@ -1,0 +1,150 @@
+.tableContainer{
+    max-height: calc(100vh - 300px);
+    overflow-y: auto;
+}
+
+.table tr{
+    border: none;
+}
+
+.table tr td button span.table_asc_desc{
+    color: red !important;
+}
+
+.table tr th{
+    border-color: #d9e6fc;
+    background-color: #DCE8FD;
+}
+
+.table tr th[data-column-id = 'revision_breakdown']{
+    text-align: center;
+}
+
+.table tr td{
+    padding: 6px 10px;
+    min-width: 150px;
+}
+
+.table tr:nth-child(evet){
+    background-color: #fdfdfd;
+}
+
+.table tbody tr td:not(:last-child),
+.table thead tr th:not(:last-child){
+    border-width: 0 1px 1px 0 !important;
+}
+
+.table tbody tr td:last-child,
+.table thead tr th:last-child{
+    border-width: 0 0px 1px 0 !important;
+}
+
+.table tbody tr td:not(:first-child),
+.table thead tr th:not(:first-child){
+    border-left: none !important;
+}
+
+.table tbody tr:last-child td{
+    border-bottom-width: 0 !important;
+}
+
+
+.table th[data-column-id = "revision_breakdown"]{
+    background-color: #d9e6fc;
+}
+
+.modal_panel{
+    width: 70vw;
+}
+
+.modal_body{
+    padding: 10px 16px 20px;
+}
+
+
+
+@media only screen and (max-width: 1400px){
+    .modal_panel{
+        width: 80vw;
+    }
+}
+
+
+@media only screen and (max-width: 756px){
+    .modal_panel{
+        width: 100vw !important;
+    }
+}
+
+
+.modal_title_bar{
+    background-color: #f1f1f1;
+}
+
+.table_date_picker{
+    border: 1px solid rgb(236, 236, 236);
+}
+
+
+.revision_popover_panel{
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+    /* width: clamp(255px, 100%, 350px); */
+    width: 100%;
+    max-width: 350px;
+}
+
+
+.comment_number{
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.comment_modal{
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.comment_item{
+    max-width: 550px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #dfdfdf;
+}
+
+.comment_item_header{
+   font-size: 16px;
+}
+
+.comment_item_header span{
+    font-size: 13px;
+    color: #777;
+    display: block;
+}
+
+.comment_item_body{
+    padding: 6px 0;
+    color: #2f2f35;
+}
+
+/* table ui by column name */
+.project_title{
+    min-width: 200px;
+    text-align: left;
+}
+
+.task_title{
+    min-width: 320px;
+    text-align: left;
+}
+
+.reason_for_revision{
+    min-width: 320px;
+    text-align: left;
+}
+
+.dispute_comment{
+    text-align: center;
+}
